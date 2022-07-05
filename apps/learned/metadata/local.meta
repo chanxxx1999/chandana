@@ -37,3 +37,13 @@ modtime = 1656777249.403034000
 owner = nobody
 version = 9.0.0
 modtime = 1656777311.104432000
+
+[props/splunk_archiver-too_small]
+owner = nobody
+version = 9.0.0
+modtime = 1657031434.514222000
+
+[props/git_for_splunk_gitforsplunk-too_small]
+owner = nobody
+version = 9.0.0
+modtime = 1657031434.997338000
