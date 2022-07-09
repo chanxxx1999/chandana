@@ -802,3 +802,4 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  top 20 changed_file 
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368248.842676",1,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"rt_chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_rt_1657368263.61","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657368248 latest=1657368249","chandana-VirtualBox","1657368263.258811",1,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
