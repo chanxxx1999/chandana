@@ -5,7 +5,7 @@ modtime = 1657352278.262730000
 [inputs/gitforsplunk%3A%2F%2Fgit_splunk]
 owner = chandana
 version = 9.0.0
-modtime = 1657355741.332664000
+modtime = 1657368166.431024000
 
 [savedsearches/GitForSplunk%20Run%20Health]
 version = 9.0.0
