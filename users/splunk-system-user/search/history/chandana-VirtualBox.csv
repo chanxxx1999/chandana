@@ -91,3 +91,7 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1657369801.92","| rest splunk_server=local services/server/info","chandana-VirtualBox","1657369801.129404",0,0,1657369801,1,0,completed,"0.018000000000000002",,,,,,,,,,,
 "1657369801.93","| rest services/server/info | sort splunk_server","chandana-VirtualBox","1657369801.158491",0,0,1657369801,1,0,completed,"0.023",,,,,,,,,,,
 "1657369801.94","| rest services/server/info | sort splunk_server","chandana-VirtualBox","1657369801.196247",0,0,1657369801,1,0,completed,"0.024",,,,,,,,,,,
+"1657373400.104","| rest splunk_server=local services/server/info","chandana-VirtualBox","1657373400.715390",0,0,1657373400,1,0,completed,"0.022",,,,,,,,,,,
+"1657373400.105","| rest services/server/info | sort splunk_server","chandana-VirtualBox","1657373400.765229",0,0,1657373400,1,0,completed,"0.02",,,,,,,,,,,
+"1657373401.107","| rest splunk_server=local services/server/info","chandana-VirtualBox","1657373401.039696",0,0,1657373401,1,0,completed,"0.015",,,,,,,,,,,
+"1657373401.108","| rest services/server/info | sort splunk_server","chandana-VirtualBox","1657373401.091744",0,0,1657373401,1,0,completed,"0.016",,,,,,,,,,,
