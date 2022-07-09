@@ -3823,17 +3823,19 @@
 /opt/splunk/etc/system/default/savedsearches.conf                         skip_scheduled_realtime_idxc = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         vsid = 
 /opt/splunk/etc/system/default/savedsearches.conf                         workload_pool = 
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            [GitForSplunk Run Health]
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              [GitForSplunk Run Health]
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            action.email = 1
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            action.email.include.view_link = 0
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            action.email.message.alert = $result.body$
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            action.email.subject.alert = $result.subject$
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              action.email.to = chandana9325@gmail.com
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            action.email.useNSSubject = 1
 /opt/splunk/etc/system/default/savedsearches.conf                         action.populate_lookup = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         action.rss = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         action.script = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         action.summary_index = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         action.summary_index.force_realtime_schedule = 0
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              action.webhook.enable_allowlist = 0
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            alert.digest_mode = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         alert.expires = 24h
 /opt/splunk/etc/system/default/savedsearches.conf                         alert.managedBy = 
@@ -3860,8 +3862,8 @@
 /opt/splunk/etc/system/default/savedsearches.conf                         auto_summarize.suspend_period = 24h
 /opt/splunk/etc/system/default/savedsearches.conf                         auto_summarize.timespan = 
 /opt/splunk/etc/system/default/savedsearches.conf                         auto_summarize.workload_pool = 
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            counttype = number of events
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            cron_schedule = 7-59/15 * * * *
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              counttype = always
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              cron_schedule = * * * * *
 /opt/splunk/etc/system/default/savedsearches.conf                         defer_scheduled_searchable_idxc = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         description = 
 /opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            disabled = 1
@@ -3869,13 +3871,13 @@
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.auto_cancel = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.auto_pause = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.buckets = 0
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            dispatch.earliest_time = -5m
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              dispatch.earliest_time = rt
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.index_earliest = 
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.index_latest = 
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.indexedRealtime = 
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.indexedRealtimeMinSpan = 
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.indexedRealtimeOffset = 
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            dispatch.latest_time = now
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              dispatch.latest_time = rt
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.lookups = 1
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.max_count = 500000
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.max_time = 0

@@ -72,8 +72,8 @@
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros
 host = $decideOnStartup
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  include_btool_output = 1
-/opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                index = _internal
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  interval = 3600
+/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  index = _internal
+/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  interval = 1000
 /opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                python.version = python3
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  remote_push = 1
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  repository_directory = .git/
