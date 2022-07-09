@@ -803,3 +803,20 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368248.842676",1,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 "rt_chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_rt_1657368263.61","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657368248 latest=1657368249","chandana-VirtualBox","1657368263.258811",1,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657368378.62","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368378.108327",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368378.000000000",36,1657368378,20,search3,36,"1656763200.000000000","1657368378.000000000",completed,"0.221",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1657368378.63","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657368378.110586",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368378.000000000",36,1657368378,36,search1,36,"1656763200.000000000","1657368378.000000000",completed,"0.196",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1657368383.64","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657368318 latest=1657368319","chandana-VirtualBox","1657368383.179932",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368383.000000000",1,1657368383,1,search2,1,"1657368318.000000000","1657368319.000000000",completed,"0.077",,,,,,,,,,,,,,,,,,,
