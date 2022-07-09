@@ -848,8 +848,8 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
     [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
 | eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
 | table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
-| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657368495.921952",0,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657368495.921952",0,"UI:Dashboard:status","1657305000.000000000",0,0,"1657368495.000000000",38,1657368496,38,search1,38,"1657305000.000000000","1657368495.000000000",completed,"0.336",,,,,,,,,,,,,,,,,,,
 "chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657368495.70","search sourcetype=gitforsplunk index=_internal 
 |  top 20 changed_file 
 |  fields - percent
-| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368495.971007",0,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368495.971007",0,"UI:Dashboard:status","1657305000.000000000",0,0,"1657368495.000000000",38,1657368496,20,search3,38,"1657305000.000000000","1657368495.000000000",completed,"0.276",,,,,,,,,,,,,,,,,,,
