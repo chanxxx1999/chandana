@@ -1,0 +1,68 @@
+sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","result_count","scan_count",status,"total_run_time",provenance,"api_et","api_index_et","api_index_lt","api_lt","savedsearch_name","search_et","search_lt","__mv_sid","__mv_search","__mv_splunk_server","__mv__time","__mv_is_realtime","__mv_event_count","__mv_exec_time","__mv_result_count","__mv_scan_count","__mv_status","__mv_total_run_time","__mv_provenance","__mv_api_et","__mv_api_index_et","__mv_api_index_lt","__mv_api_lt","__mv_savedsearch_name","__mv_search_et","__mv_search_lt"
+"1657352912.10","| eventcount summarize=false index=* | dedup index | rename index as name | fields name","chandana-VirtualBox","1657352912.846802",0,0,1657352912,3,0,completed,"0.047",,,,,,,,,,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search1_1657353018.15","search index=_internal sourcetype=splunk_web_service TERM(dashboard_migrate_type=v1.0_load) | table owner
+| append [
+ | rest splunk_server=local /servicesNS/-/-/data/ui/views search=""eai:type=html"" count=0
+ | rename eai:acl.owner as owner
+ | table owner]
+| append [
+    | rest splunk_server=local /servicesNS/-/-/data/ui/views search=""rootNode=form OR rootNode=dashboard"" count=0
+ | rename eai:data as xml eai:acl.owner as owner
+    ``` include only dashboards with customjs ```
+    | regex xml=""^<(dashboard|form)(.|\n)*script[ ]*=[ ]*(?:\'|\"").*\.js(?:\'|\"")(.|\n)*>(.|\n)*""
+    ``` filter out dashboards with version=""1.1"" explicitly set ```
+    | regex xml!=""^<(dashboard|form)(.|\n)*version[ ]*=[ ]*(?:\'|\"")1.1(?:\'|\"")(.|\n)*>(.|\n)*""
+ | table owner]
+| dedup owner","chandana-VirtualBox","1657353018.986483",0,0,1657353019,0,0,completed,"1.937","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353018.000000000",search1,"1657263600.000000000","1657353018.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search2_1657353018.16","search index=_internal sourcetype=splunk_web_service TERM(dashboard_migrate_type=v1.0_load)
+| fields app
+| append [
+ | rest splunk_server=local /servicesNS/-/-/data/ui/views search=""eai:type=html"" count=0
+ | rename eai:acl.app as app
+ | table app]
+| append [
+ | rest splunk_server=local /servicesNS/-/-/data/ui/views search=""rootNode=form OR rootNode=dashboard"" count=0
+ | rename eai:data as xml eai:acl.app as app
+    ``` include only dashboards with customjs ```
+    | regex xml=""^<(dashboard|form)(.|\n)*script[ ]*=[ ]*(?:\'|\"").*\.js(?:\'|\"")(.|\n)*>(.|\n)*""
+    ``` filter out dashboards with version=""1.1"" explicitly set ```
+    | regex xml!=""^<(dashboard|form)(.|\n)*version[ ]*=[ ]*(?:\'|\"")1.1(?:\'|\"")(.|\n)*>(.|\n)*""
+ | table app]
+| dedup app
+| join type=inner app
+ [ | rest splunk_server=local /servicesNS/-/-/apps/local count=0
+ | rename title as app label as app_label
+ | table app app_label]
+| strcat app_label "" ("" app "")"" app_dropdown","chandana-VirtualBox","1657353018.987147",0,0,1657353019,0,0,completed,"2.101","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353018.000000000",search2,"1657263600.000000000","1657353018.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search3_1657353019.17","search index=_internal sourcetype=splunk_web_service TERM(dashboard_migrate_type=v1.0_load) owner=* app=* | timechart count","chandana-VirtualBox","1657353019.114139",0,0,1657353019,0,0,completed,"0.41500000000000004","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353019.000000000",search3,"1657263600.000000000","1657353019.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search4_1657353019.18","search index=_internal sourcetype=splunk_web_service TERM(dashboard_migrate_type=v1.0_load) owner=* app=*
+| join type=inner app
+ [ | rest splunk_server=local /servicesNS/-/-/apps/local count=0
+ | rename title as app label as app_label
+ | table app app_label]
+| stats count by view_name, owner, app, app_label
+| sort - count","chandana-VirtualBox","1657353019.116453",0,0,1657353019,0,0,completed,"0.487","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353019.000000000",search4,"1657263600.000000000","1657353019.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search8_1657353019.20","| rest splunk_server=local /servicesNS/-/-/data/ui/views search=""eai:type=html"" count=0
+| rename title as view_name eai:acl.app as app eai:acl.owner as owner
+| search owner=* app=*
+| table view_name, owner, app
+| join type=inner app
+ [ | rest splunk_server=local /servicesNS/-/-/apps/local count=0
+ | rename title as app label as app_label
+ | table app app_label]","chandana-VirtualBox","1657353019.128972",0,0,1657353019,0,0,completed,"0.45","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353019.000000000",search8,"1657263600.000000000","1657353019.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search7_1657353019.21","| rest splunk_server=local /servicesNS/-/-/data/ui/views search=""eai:type=html"" count=0
+          | rename eai:acl.app as app eai:acl.owner as owner
+          | search owner=* app=*
+          | stats count","chandana-VirtualBox","1657353019.129828",0,0,1657353019,1,0,completed,"0.293","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353019.000000000",search7,"1657263600.000000000","1657353019.000000000",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__search__search5_1657353019.22","| rest splunk_server=local /servicesNS/-/-/data/ui/views search=""rootNode=form OR rootNode=dashboard"" count=0
+| rename eai:data as xml
+  title as view_name
+  eai:acl.app as app
+  eai:acl.owner as owner
+| search owner=* app=*
+``` include only dashboards with customjs ```
+| regex xml=""^<(dashboard|form)(.|\n)*script[ ]*=[ ]*(?:\'|\"").*\.js(?:\'|\"")(.|\n)*>(.|\n)*""
+``` filter out dashboards with version=""1.1"" explicitly set ```
+| regex xml!=""^<(dashboard|form)(.|\n)*version[ ]*=[ ]*(?:\'|\"")1.1(?:\'|\"")(.|\n)*>(.|\n)*""
+| stats count","chandana-VirtualBox","1657353019.144739",0,0,1657353019,1,0,completed,"1.537","UI:Dashboard:jquery_upgrade","1657263600.000000000",0,0,"1657353019.000000000",search5,"1657263600.000000000","1657353019.000000000",,,,,,,,,,,,,,,,,,,
+"1657353265.23","| eventcount summarize=false index=* | dedup index | rename index as name | fields name","chandana-VirtualBox","1657353265.877784",0,0,1657353265,3,0,completed,"0.061",,,,,,,,,,,,,,,,,,,,,,,,,,,
