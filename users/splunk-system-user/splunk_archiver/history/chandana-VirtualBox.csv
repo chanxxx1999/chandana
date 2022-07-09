@@ -17,3 +17,4 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1657363620.37","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657363620.919646",0,0,1657363620,0,0,canceled,"0.26",,,,,,,,,,,
 "1657368085.46","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657368085.951334",0,0,1657368085,0,0,canceled,"0.254",,,,,,,,,,,
 "1657370820.95","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657370820.760275",0,0,1657370820,0,0,canceled,"0.245",,,,,,,,,,,
+"1657374421.110","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657374421.103501",0,,,,,,,,,,,,,,,,,
