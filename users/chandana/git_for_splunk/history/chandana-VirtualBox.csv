@@ -886,3 +886,8 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  top 20 changed_file 
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368637.384391",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368637.000000000",45,1657368637,20,search3,45,"1656763200.000000000","1657368637.000000000",completed,"0.222",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657368685.77","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657368685.263795",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368685.000000000",47,1657368685,20,search3,47,"1656763200.000000000","1657368685.000000000",completed,"0.184",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1657368693.78","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657368646 latest=1657368647","chandana-VirtualBox","1657368693.197041",0,"UI:Dashboard:status","1656763200.000000000",0,0,"1657368693.000000000",1,1657368693,1,search2,1,"1657368646.000000000","1657368647.000000000",completed,"0.076",,,,,,,,,,,,,,,,,,,
