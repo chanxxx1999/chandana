@@ -102,7 +102,7 @@ mobileanalytics,Mobile Analytics App,https://splunkbase.splunk.com/app/1578/,1.0
 Splunk_Resources_For_Deployment_Success,Splunk Resources for Deployment Success,https://splunkbase.splunk.com/app/4527/,1.5.0#7.2|7.3|
 spl_examples,Splunk SPL Examples,https://splunkbase.splunk.com/app/3456/,1.0.0#6.5|
 TA-bugcrowd-api-v4,Bugcrowd Add-on (API v4),https://splunkbase.splunk.com/app/5658/,1.0.2#8.2|9.0|;1.0.0#8.2|9.0|;1.2.0#8.2|9.0|;1.1.0#8.2|9.0|;1.3.0#8.2|9.0|;1.3.1#8.2|9.0|;1.0.1#8.2|9.0|
-Shibboleth_App,Shibboleth Add-on for Splunk,https://splunkbase.splunk.com/app/4389/,1.1.0#7.0|7.1|7.2|;1.0.2#7.0|7.1|7.2|;1.0.1#7.0|7.1|7.2|;1.0.0#7.0|7.1|7.2|
+Shibboleth_App,Shibboleth Add-on for Splunk,https://splunkbase.splunk.com/app/4389/,1.1.0#7.0|7.1|7.2|;1.0.2#7.0|7.1|7.2|;1.0.1#7.0|7.1|7.2|;1.0.0#7.0|7.1|7.2|;1.1.1#7.0|7.1|7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|
 synacktek_dropped_traffic_dashboard,Dropped Traffic Dashboard,https://splunkbase.splunk.com/app/2669/,1.1#6.0|6.1|6.2|
 Hammerhead,HammerHead Pivot2Pcap,https://splunkbase.splunk.com/app/1207/,1.0.2#4.3|5.0|;1.2.0#4.3|5.0|
 heremaps,HERE maps,https://splunkbase.splunk.com/app/1887/,0.3#6.1|6.2|;0.1#6.1|;0.6#6.1|6.2|6.3|6.4|;0.5#6.1|6.2|;0.4#6.1|6.2|
@@ -1466,7 +1466,7 @@ SA_mvstats,mvstats for Splunk,https://splunkbase.splunk.com/app/5198/,1.1.1#7.3|
 TA-Essential8,Essential 8 Add-on For Splunk,https://splunkbase.splunk.com/app/4049/,1.2.3#7.2|7.3|8.0|8.1|8.2|9.0|;1.2.0#6.6|7.0|7.1|7.2|;1.2.1#7.0|7.1|7.2|7.3|;1.0.0#6.6|7.0|7.1|;1.0.1#6.6|7.0|7.1|;1.2.2#7.2|7.3|8.0|8.1|8.2|9.0|
 SA-ssh_alerts_linux_x86_64,SSH Alert Actions (for Linux 64-bit),https://splunkbase.splunk.com/app/4398/,1.1.0#7.2|7.3|8.0|8.1|8.2|9.0|;1.0.1#7.0|7.1|7.2|7.3|;1.1.1#8.0|8.1|8.2|9.0|;1.0#7.0|7.1|
 chargebacker_for_splunk,Charge Backer ( On-Going Costs) App for Splunk,https://splunkbase.splunk.com/app/4709/,1.0.4#7.0|7.1|7.2|7.3|;1.0.2#7.0|7.1|7.2|7.3|;1.0.3#7.0|7.1|7.2|7.3|;1.0.0#7.0|7.1|7.2|7.3|;1.0.1#7.0|7.1|7.2|7.3|
-TA-linux_iptables,Linux Iptables Add-on,https://splunkbase.splunk.com/app/4490/,1.3.1#7.2|7.3|7.1|7.0|;1.3.3#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.2#7.2|7.3|8.0|8.1|8.2|9.0|7.1|7.0|;1.3.5#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.4#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.7#7.2|7.3|8.0|8.1|8.2|9.0|;1.2.0#7.2|7.3|7.1|7.0|;1.0.0#7.2|7.1|7.0|;1.3.6#7.2|7.3|8.0|8.1|8.2|9.0|
+TA-linux_iptables,Linux Iptables Add-on,https://splunkbase.splunk.com/app/4490/,1.3.1#7.2|7.3|7.1|7.0|;1.3.3#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.2#7.2|7.3|8.0|8.1|8.2|9.0|7.1|7.0|;1.3.5#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.4#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.7#7.2|7.3|8.0|8.1|8.2|9.0|;1.2.0#7.2|7.3|7.1|7.0|;1.0.0#7.2|7.1|7.0|;1.3.6#7.2|7.3|8.0|8.1|8.2|9.0|;1.3.8#8.0|8.1.2008|8.1|8.2|9.0|
 TA_whois_xml_reverse_whois_api,Whois XML Reverse Whois API for Splunk,https://splunkbase.splunk.com/app/5079/,1.0.2#8.0|8.1|8.2|9.0|;1.0.1#8.0|8.1.2008|8.1|8.2|9.0|;1.0.3#8.0|8.1.2008|8.1|8.2|9.0|
 Intelact-App,IntelAct App for Splunk,https://splunkbase.splunk.com/app/5439/,1.0.8#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.9#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.6#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.7#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.5#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.2#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.3#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#8.1|8.2|9.0|;1.0.1#7.2|7.3|8.0|8.1|8.2|9.0|;1.0.10#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.11#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.12#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.13#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.4#|
 bcc651c0-def5-11e9-8fb8-06641feda3da,JumpCloud,https://splunkbase.splunk.com/app/4699/,null#|
@@ -1855,7 +1855,7 @@ rss_reader,RSS Reader Workflow Add-On,https://splunkbase.splunk.com/app/294/,1.0
 TA-simple-nmap,Simple NMAP,https://splunkbase.splunk.com/app/3056/,1.0#6.3|
 cc8c3a7c-d41b-4adb-a20b-8d4ce385ca4d,Splunk App for HadoopOps,https://splunkbase.splunk.com/app/1173/,1.1.3#5.0|;1.1.2#4.3|5.0|;1.1.1#4.3|5.0|;1.1#4.3|5.0|;1.0#4.3|5.0|;1.0.Beta#4.3|5.0|
 Splunk_TA_nagios-core,Splunk Add-on for Nagios Core,https://splunkbase.splunk.com/app/2703/,1.1.0#7.0|7.1|7.2|7.3|8.0|8.1|8.2|9.0|6.6|;1.2.1#7.2|7.3|8.0|8.1|8.2|9.0|;1.2.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#6.2|6.3|6.4|6.5|
-kaspersky_app,Kaspersky App for Splunk,https://splunkbase.splunk.com/app/4661/,1.1.0#7.0|7.1|7.2|7.3|;1.0.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|
+kaspersky_app,Kaspersky App for Splunk,https://splunkbase.splunk.com/app/4661/,1.1.0#7.0|7.1|7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|
 TA-avanan-siem,Avanan Splunk,https://splunkbase.splunk.com/app/5720/,1.0.1#8.0|8.1.2008|8.1|8.2|9.0|;1.0.3#8.0|8.1|8.2|9.0|;1.0.2#8.0|8.1|8.2|9.0|
 TA_syslog_priority_extractor,Syslog Priority Extractor TA,https://splunkbase.splunk.com/app/4890/,1.0.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.2#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.1#7.2|7.3|8.0|8.1|8.2|9.0|
 TA-linode,Linode Add-on for Splunk,https://splunkbase.splunk.com/app/5707/,0.0.1#8.0|8.1.2008|8.1|8.2|9.0|;0.0.2#8.0|8.1.2008|8.1|8.2|9.0|
@@ -2317,7 +2317,7 @@ ClamAV,ClamAV,https://splunkbase.splunk.com/app/1798/,1.0.4#6.0|6.1|6.2|6.3|6.4|
 squeezebox,Splunk for Squeezebox,https://splunkbase.splunk.com/app/905/,0.1#4.3|5.0|
 Splunk_TA_apache,Splunk Add-on for Apache Web Server,https://splunkbase.splunk.com/app/3186/,2.0.0#7.2|7.3|8.0|8.1|8.2|9.0|;1.0.0#7.0|7.1|7.2|7.3|8.0|6.6|;2.1.0#8.1|8.2|9.0|
 sh_what3words_curl,What3Words API Search Command,https://splunkbase.splunk.com/app/4689/,1.0.0#7.0|7.1|7.2|7.3|
-TA-aruba_networks,Aruba Networks Add-on for Splunk,https://splunkbase.splunk.com/app/4668/,0.1.2#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.0#7.0|7.1|7.2|7.3|;0.1.1#7.0|7.1|7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.4#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.3#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.2.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|
+TA-aruba_networks,Aruba Networks Add-on for Splunk,https://splunkbase.splunk.com/app/4668/,0.1.2#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.0#7.0|7.1|7.2|7.3|;0.1.1#7.0|7.1|7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.4#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.1.3#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;0.2.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#8.0|8.1|8.2|9.0|
 TA-digital-shadows,Digital Shadows Add-on for Splunk,https://splunkbase.splunk.com/app/4247/,2.0.0#7.2|7.3|8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#6.6|7.0|7.1|;1.0.1#7.0|7.1|;2.1.0#7.2|7.3|8.0|8.1|8.2|9.0|;3.0.0#8.0|8.1.2008|8.1|8.2|9.0|
 thor-v2,THOR APT Scanner v2,https://splunkbase.splunk.com/app/3717/,2.1.0#6.0|6.1|6.2|6.3|6.4|6.5|6.6|7.0|7.1|7.2|7.3|;2.0.1#6.0|6.1|6.2|6.3|6.4|6.5|6.6|;2.0.0#6.0|6.1|6.2|6.3|6.4|6.5|6.6|;2.0.3#6.0|6.1|6.2|6.3|6.4|6.5|6.6|7.0|;2.0.2#6.0|6.1|6.2|6.3|6.4|6.5|6.6|7.0|
 VirsecApp,Virsec Security Platform - Threat Dashboard,https://splunkbase.splunk.com/app/4143/,1.0.0#7.0|7.1|7.2|;2.0.0#7.2|7.3|8.0|8.1|8.2|9.0|
@@ -3308,7 +3308,7 @@ CIM_Toolkit,CIM Toolkit for Splunk Supporting Common Information Model Add-on,ht
 atlas_assessment,Atlas Assessment,https://splunkbase.splunk.com/app/6276/,1.0.0#8.1|8.2|9.0|;1.0.1#8.1|8.2|9.0|
 TA_CTXS_AS,Citrix Analytics Add-on for Splunk,https://splunkbase.splunk.com/app/6280/,2.1.1#8.1|8.2|9.0|
 GV-Utils,GV-Utils for Splunk,https://splunkbase.splunk.com/app/6269/,1.1.0#8.0|8.1.2008|8.1|8.2|9.0|;1.0.1#8.0|8.1.2008|8.1|8.2|9.0|;1.0.0#8.0|8.1.2008|8.1|8.2|9.0|
-forgerock,ForgeRock Identity Cloud,https://splunkbase.splunk.com/app/6272/,1.0.2#8.1|8.2|9.0|;1.0.0#8.1|8.2|9.0|;1.0.1#8.1|8.2|9.0|
+forgerock,ForgeRock Identity Cloud,https://splunkbase.splunk.com/app/6272/,1.0.2#8.1|8.2|9.0|;1.0.0#8.1|8.2|9.0|;1.0.1#8.1|8.2|9.0|;1.0.4#8.1|8.2|9.0|;1.0.3#8.1|8.2|9.0|
 snipeit,SnipeIT Add-On for Splunk,https://splunkbase.splunk.com/app/6271/,2.0.3#8.0|8.1.2008|8.1|8.2|9.0|;2.0.1#8.2|9.0|;2.0.2#8.2|9.0|
 TA-onapsis-vulnerability-add-on-for-splunk,Onapsis Vulnerability Add-On for Splunk,https://splunkbase.splunk.com/app/6273/,1.0.0#8.0|8.1.2008|8.1|8.2|9.0|;1.1.0#8.0|8.1.2008|8.1|8.2|
 ddb5eb74-6c48-11ec-9264-eef74af60b17,Add-on for Hunter IO,https://splunkbase.splunk.com/app/6260/,null#|
