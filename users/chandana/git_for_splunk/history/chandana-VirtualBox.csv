@@ -1137,8 +1137,9 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
     [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
 | eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
 | table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
-| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657530163.827351",0,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657530163.827351",0,"UI:Dashboard:status","1657477800.000000000",0,0,"1657530163.000000000",102,1657530163,102,search1,102,"1657477800.000000000","1657530163.000000000",completed,"0.462",,,,,,,,,,,,,,,,,,,
 "chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657530163.23","search sourcetype=gitforsplunk index=_internal 
 |  top 20 changed_file 
 |  fields - percent
-| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657530163.894628",0,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657530163.894628",0,"UI:Dashboard:status","1657477800.000000000",0,0,"1657530163.000000000",102,1657530164,20,search3,102,"1657477800.000000000","1657530163.000000000",completed,"0.47200000000000003",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1657530168.25","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657530135 latest=1657530136","chandana-VirtualBox","1657530168.476527",0,"UI:Dashboard:status","1657477800.000000000",0,0,"1657530168.000000000",1,1657530168,1,search2,1,"1657530135.000000000","1657530136.000000000",completed,"0.16",,,,,,,,,,,,,,,,,,,
