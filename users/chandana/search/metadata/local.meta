@@ -5,3 +5,7 @@ modtime = 1657352912.846320000
 [ui-tour/search-tour]
 version = 9.0.0
 modtime = 1657527921.137301000
+
+[ui-tour/dashboards-tour%3Aenterprise]
+version = 9.0.0
+modtime = 1657527964.600355000

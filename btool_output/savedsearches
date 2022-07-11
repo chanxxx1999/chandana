@@ -3866,7 +3866,7 @@
 /opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              cron_schedule = * * * * *
 /opt/splunk/etc/system/default/savedsearches.conf                         defer_scheduled_searchable_idxc = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         description = 
-/opt/splunk/etc/apps/git_for_splunk/default/savedsearches.conf            disabled = 1
+/opt/splunk/etc/apps/git_for_splunk/local/savedsearches.conf              disabled = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.allow_partial_results = 1
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.auto_cancel = 0
 /opt/splunk/etc/system/default/savedsearches.conf                         dispatch.auto_pause = 0
