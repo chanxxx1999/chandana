@@ -82,3 +82,28 @@ modtime = 1657363943.764932000
 owner = nobody
 version = 9.0.0
 modtime = 1657363943.828141000
+
+[props/git_for_splunk_gitforsplunk-2]
+owner = nobody
+version = 9.0.0
+modtime = 1657527077.447864000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fgit_for_splunk_gitforsplunk.log_Mon_Jul_11_13%3A41%3A17_2022_1049584029]
+owner = nobody
+version = 9.0.0
+modtime = 1657527077.522544000
+
+[props/splunk_assist_uiassets_modular_input.log-3]
+owner = nobody
+version = 9.0.0
+modtime = 1657527077.778609000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_uiassets_modular_input.log.1_Mon_Jul_11_13%3A41%3A17_2022_1271363561]
+owner = nobody
+version = 9.0.0
+modtime = 1657527077.824334000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_uiassets_modular_input.log.1_Mon_Jul_11_13%3A41%3A17_2022_982754277]
+owner = nobody
+version = 9.0.0
+modtime = 1657527077.903804000
