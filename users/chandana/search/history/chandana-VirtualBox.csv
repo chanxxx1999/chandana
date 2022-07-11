@@ -68,3 +68,5 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1657353265.23","| eventcount summarize=false index=* | dedup index | rename index as name | fields name","chandana-VirtualBox","1657353265.877784",0,0,1657353265,3,0,completed,"0.061",,,,,,,,,,,,,,,,,,,,,,,,,,,
 "1657354647.53","| eventcount summarize=false index=* | dedup index | rename index as name | fields name","chandana-VirtualBox","1657354647.884827",0,0,1657354647,3,0,completed,"0.058",,,,,,,,,,,,,,,,,,,,,,,,,,,
 "rt_md_1657527917.32","| metadata type=sourcetypes | search totalCount > 0","chandana-VirtualBox","1657527917.064429",1,,,,,,,"UI:Search",,,,,,,,,,,,,,,,,,,,,,,,,,
+"1657527928.33","| mcatalog values(metric_name) as metrics WHERE NOT metric_name=""*_mrollup_*"" AND (""index""=""*"" OR ""index""=""_*"" ) 
+    | mvexpand metrics limit=20000","chandana-VirtualBox","1657527928.157670",0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
