@@ -1092,3 +1092,20 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  top 20 changed_file 
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657530095.916946",0,"UI:Dashboard:status","1656925200.000000000",0,0,"1657530095.000000000",390,1657530095,20,search3,390,"1656925200.000000000","1657530095.000000000",completed,"0.169",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1657530114.15","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657530114.260625",0,"UI:Dashboard:status","1656925200.000000000",0,0,"1657530114.000000000",391,1657530114,391,search1,391,"1656925200.000000000","1657530114.000000000",completed,"0.28800000000000003",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657530114.16","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657530114.270808",0,"UI:Dashboard:status","1656925200.000000000",0,0,"1657530114.000000000",391,1657530114,20,search3,391,"1656925200.000000000","1657530114.000000000",completed,"0.232",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1657530119.17","search sourcetype=gitforsplunk index=_internal host=chandana-VirtualBox earliest=1657530105 latest=1657530106","chandana-VirtualBox","1657530119.279527",0,"UI:Dashboard:status","1656925200.000000000",0,0,"1657530119.000000000",1,1657530119,1,search2,1,"1657530105.000000000","1657530106.000000000",completed,"0.065",,,,,,,,,,,,,,,,,,,
