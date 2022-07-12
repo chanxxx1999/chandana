@@ -71,4 +71,4 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1657527928.33","| mcatalog values(metric_name) as metrics WHERE NOT metric_name=""*_mrollup_*"" AND (""index""=""*"" OR ""index""=""_*"" ) 
     | mvexpand metrics limit=20000","chandana-VirtualBox","1657527928.157670",0,625,1657527928,284,625,canceled,"0.11900000000000001",,"1657527028.000000000",,,,,"1657527028.000000000",,,,,,,,,,,,,,,,,,,,
 "rt_md_1657618504.72","| metadata type=sourcetypes | search totalCount > 0","chandana-VirtualBox","1657618504.989962",1,,,,,,,"UI:Search",,,,,,,,,,,,,,,,,,,,,,,,,,
-"1657618532.74","search index=*","chandana-VirtualBox","1657618532.003287",0,,,,,,,"UI:Search",,,,,,,,,,,,,,,,,,,,,,,,,,
+"1657618532.74","search index=*","chandana-VirtualBox","1657618532.003287",0,0,1657618532,0,0,completed,"0.185","UI:Search","1657564200.000000000",,,"1657618531.000000000",,"1657564200.000000000","1657618531.000000000",,,,,,,,,,,,,,,,,,,
