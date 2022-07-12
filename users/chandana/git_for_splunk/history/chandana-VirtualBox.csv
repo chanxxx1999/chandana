@@ -1662,3 +1662,19 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  top 20 changed_file 
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657628642.672313",0,"UI:Dashboard:status","1657022400.000000000",0,0,"1657628642.000000000",1070,1657628642,20,search3,1070,"1657022400.000000000","1657628642.000000000",completed,"0.323",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1657628687.322","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chandana-VirtualBox","1657628687.076781",0,"UI:Dashboard:status","1657022400.000000000",0,0,"1657628687.000000000",1072,1657628687,1072,search1,1072,"1657022400.000000000","1657628687.000000000",completed,"0.34400000000000003",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657628687.323","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657628687.084297",0,"UI:Dashboard:status","1657022400.000000000",0,0,"1657628687.000000000",1072,1657628687,20,search3,1072,"1657022400.000000000","1657628687.000000000",completed,"0.318",,,,,,,,,,,,,,,,,,,
