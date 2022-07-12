@@ -1254,7 +1254,7 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 "chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1657618176.49","search sourcetype=gitforsplunk index=_internal 
 |  top 20 changed_file 
 |  fields - percent
-| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657618176.500321",0,"UI:Dashboard:status",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| rename changed_file as ""Filename"" count as Count","chandana-VirtualBox","1657618176.500321",0,"UI:Dashboard:status","1657011600.000000000",0,0,"1657618176.000000000",808,1657618176,20,search3,808,"1657011600.000000000","1657618176.000000000",canceled,"0.28300000000000003",,,,,,,,,,,,,,,,,,,
 "chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1657618181.51","search sourcetype=gitforsplunk index=_internal 
 | eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
 | eval etime1 = _time
