@@ -18,3 +18,9 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 | table app","chandana-VirtualBox","1657621278.649700",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657533600.000000000",0,0,"1657621278.000000000",0,1657621278,17,search1,0,"1657533600.000000000","1657621278.000000000",completed,"0.10200000000000001",,,,,,,,,,,,,,,,,,,
 "chandana__chandana__SplunkVersionControl__search3_1657621278.101","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1657621278.667957",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657533600.000000000",0,0,"1657621278.000000000",0,1657621278,0,search3,0,"1657533600.000000000","1657621278.000000000",completed,"0.032",,,,,,,,,,,,,,,,,,,
 "rt_md_1657621323.103","| metadata type=sourcetypes | search totalCount > 0","chandana-VirtualBox","1657621323.677003",1,"UI:Search",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"rt_md_1657621337.105","| metadata type=sourcetypes | search totalCount > 0","chandana-VirtualBox","1657621337.550800",1,"UI:Search",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"chandana__chandana__SplunkVersionControl__search1_1657621340.106","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
+| rename title as app
+| search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
+| table app","chandana-VirtualBox","1657621340.418884",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657533600.000000000",0,0,"1657621340.000000000",0,1657621340,17,search1,0,"1657533600.000000000","1657621340.000000000",completed,"0.089",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__SplunkVersionControl__search3_1657621340.107","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1657621340.425403",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657533600.000000000",0,0,"1657621340.000000000",0,1657621340,0,search3,0,"1657533600.000000000","1657621340.000000000",completed,"0.08",,,,,,,,,,,,,,,,,,,
