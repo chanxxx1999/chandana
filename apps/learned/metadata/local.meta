@@ -122,3 +122,18 @@ modtime = 1657529984.509242000
 owner = nobody
 version = 9.0.0
 modtime = 1657529984.581370000
+
+[props/splunk_assist_uiassets_modular_input.log-5]
+owner = nobody
+version = 9.0.0
+modtime = 1657617279.379812000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_uiassets_modular_input.log.1_Tue_Jul_12_14%3A44%3A39_2022_1875967752]
+owner = nobody
+version = 9.0.0
+modtime = 1657617279.566086000
+
+[sourcetypes/%2Fopt%2Fsplunk%2Fvar%2Flog%2Fsplunk%2Fsplunk_assist_uiassets_modular_input.log.1_Tue_Jul_12_14%3A44%3A39_2022_1096511349]
+owner = nobody
+version = 9.0.0
+modtime = 1657617279.730038000
