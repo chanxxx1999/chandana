@@ -5,10 +5,10 @@
 /opt/splunk/etc/apps/search/default/macros.conf                    [audit_searchlocal(1)]
 /opt/splunk/etc/apps/search/default/macros.conf                    args = filter
 /opt/splunk/etc/apps/search/default/macros.conf                    definition = search index=_audit action=search (id=* OR search_id=*) | eval search_id = if(isnull(search_id), id, search_id) | replace '*' with * in search_id | search $filter$
-/opt/splunk/etc/apps/search/default/macros.conf                    [comment(1)]
-/opt/splunk/etc/apps/search/default/macros.conf                    args = text
-/opt/splunk/etc/apps/search/default/macros.conf                    definition = ""
-/opt/splunk/etc/apps/search/default/macros.conf                    iseval = 1
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [comment(1)]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      args = text
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = ""
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
 /opt/splunk/etc/apps/splunk_monitoring_console/default/macros.conf [dmc_audit_get_search_type]
 /opt/splunk/etc/apps/splunk_monitoring_console/default/macros.conf definition = eval search_type = case( 
 match(search_id, "^SummaryDirector_"), "summarization", 
@@ -958,8 +958,29 @@ default="0 cores"
 /opt/splunk/etc/apps/splunk_instrumentation/default/macros.conf    args = name,multiplier,round_digits
 /opt/splunk/etc/apps/splunk_instrumentation/default/macros.conf    definition = tostring(coalesce(round($name$*$multiplier$,$round_digits$), "null"))
 /opt/splunk/etc/apps/splunk_instrumentation/default/macros.conf    iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [requestingAddress]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = False
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [searchheadhosts]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = host=*
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
 /opt/splunk/etc/apps/search/default/macros.conf                    [set_local_host]
 /opt/splunk/etc/apps/search/default/macros.conf                    definition = rest splunk_server=local /services/server/info | return host
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [splunk_vc_ko_query]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = splunk_kom:splunk_vc_kom_audit_summary
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [splunk_vc_name]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = Prod
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [splunk_vc_timeout]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = 30
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [splunk_vc_url]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = https://localhost:8089/services/splunkversioncontrol_rest_restore
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      [sslVerify]
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      definition = False
+/opt/splunk/etc/apps/SplunkVersionControl/default/macros.conf      iseval = 0
 /opt/splunk/etc/apps/splunk_monitoring_console/default/macros.conf [time_modifier(1)]
 /opt/splunk/etc/apps/splunk_monitoring_console/default/macros.conf args = time_modifier
 /opt/splunk/etc/apps/splunk_monitoring_console/default/macros.conf definition = tostring(relative_time(time(), "$time_modifier$"))
