@@ -32,4 +32,4 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1657637220.737","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657637220.321807",0,0,1657637220,0,0,canceled,"0.22",,,,,,,,,,,
 "1657640820.864","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657640820.467428",0,0,1657640820,0,0,canceled,"0.22",,,,,,,,,,,
 "1657644420.1005","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657644420.836666",0,0,1657644420,0,0,canceled,"0.216",,,,,,,,,,,
-"1657684020.32","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657684020.470628",0,,,,,,,,,,,,,,,,,
+"1657684020.32","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chandana-VirtualBox","1657684020.470628",0,0,1657684020,0,0,canceled,"0.248",,,,,,,,,,,
