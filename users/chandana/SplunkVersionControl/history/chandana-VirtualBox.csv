@@ -35,5 +35,5 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 "chandana__chandana__SplunkVersionControl__search1_1657683797.16","| rest /services/apps/local search=""disabled=0"" count=0 f=title splunk_server=local
 | rename title as app
 | search NOT [ | inputlookup splunkversioncontrol_globalexclusionlist ]
-| table app","chandana-VirtualBox","1657683797.979366",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-"chandana__chandana__SplunkVersionControl__search3_1657683798.17","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1657683798.017867",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+| table app","chandana-VirtualBox","1657683797.979366",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657594800.000000000",0,0,"1657683797.000000000",0,1657683797,17,search1,0,"1657594800.000000000","1657683797.000000000",completed,"0.092",,,,,,,,,,,,,,,,,,,
+"chandana__chandana__SplunkVersionControl__search3_1657683798.17","| inputlookup splunkversioncontrol_taglist | sort - tag","chandana-VirtualBox","1657683798.017867",0,"UI:Dashboard:splunkversioncontrol_restore_dynamic","1657594800.000000000",0,0,"1657683798.000000000",0,1657683798,0,search3,0,"1657594800.000000000","1657683798.000000000",completed,"0.064",,,,,,,,,,,,,,,,,,,
